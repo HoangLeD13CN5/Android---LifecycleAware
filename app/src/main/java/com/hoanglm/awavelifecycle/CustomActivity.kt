@@ -5,7 +5,10 @@ import android.arch.lifecycle.LifecycleOwner
 import android.arch.lifecycle.LifecycleRegistry
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-
+/*
+* This class custom LifecycleOwner( push state of Lifecycle for LifecycleObserver)
+* LifecycleRegister register state of Lifecycle and override function getLifecycle
+* */
 class CustomActivity : AppCompatActivity(), LifecycleOwner{
 
     lateinit var registry: LifecycleRegistry
